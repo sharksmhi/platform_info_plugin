@@ -1,0 +1,22 @@
+[project]
+name = "platform_info_plugin"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "a001985", email = "magnus.wenzer@smhi.se"},
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.entry-points.'sharktools.platform_info']
+sharktools_platform_info = 'platform_info_plugin'
+
+
+[tool.pdm]
+distribution = true
